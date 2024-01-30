@@ -1,0 +1,42 @@
+name: {insert name here}
+   on:
+  {insert first event name here}:
+on:
+  push:
+    branches: [ {insert branch name here} ]
+on:
+  push:
+    branches: [ "main" ]
+  {insert second event name here}:
+    branches: [ {insert branch name here} ]
+name: CI workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+    {insert job name here}:
+jobs:
+  build:
+    runs-on: {insert runner name here}
+name: CI workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: {insert container name here}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: {insert container name here}
